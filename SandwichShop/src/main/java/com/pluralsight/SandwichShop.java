@@ -22,6 +22,21 @@ public class SandwichShop {
             System.out.println("Wrong number");
         }
 
+        scanner.nextLine();
+
+        System.out.println("Do you want a loaded sandwich? (yes/no) ");
+        String loaded = scanner.nextLine();
+
+        if (loaded.equals("yes")) {
+            if (size == 1){
+                base_price = base_price + 1;
+            } else if (size == 2) {
+                base_price = base_price + 1.75f;
+            }
+        } else {
+            base_price = base_price + 0;
+        }
+
 
         System.out.print("How old are you? ");
         int age = scanner.nextInt();
