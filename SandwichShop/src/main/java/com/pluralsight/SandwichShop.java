@@ -22,6 +22,7 @@ public class SandwichShop {
             System.out.println("Wrong number");
         }
 
+
         System.out.print("How old are you? ");
         int age = scanner.nextInt();
 
@@ -34,11 +35,10 @@ public class SandwichShop {
         } else {
             System.out.println("You do not have discount.");
         }
+
         double price_to_pay = base_price * (1 - discount);
 
-        System.out.println("Your price is: " + price_to_pay);
-
-
+        System.out.printf("Your price is: $%.2f\n ", price_to_pay);
 
 
     }
@@ -46,6 +46,10 @@ public class SandwichShop {
 /* Prompt the user for the size of the sandwich (1 or 2):
 - 1: Regular: base price $5.45
 - 2: Large: base price $8.95
+Prompt the user if they would like the sandwich "loaded" (yes/no). If so there is
+an additional cost for a loaded sandwich
+- Regular: $1.00
+- Large: $1.75
 Prompt the user for their age:
 - Student (17 years old or younger) — receive a 10% discount
 - Seniors (65 years old or older) — receive a 20% discount
