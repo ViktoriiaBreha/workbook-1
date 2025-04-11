@@ -13,11 +13,11 @@ public class SandwichShop {
         System.out.print("Your choice: ");
         int size = scanner.nextInt();
 
-        double base_price = 0;
+        float base_price = 0f;
         if (size == 1) {
-            base_price = 5.45;
+            base_price = 5.45f;
         } else if (size == 2) {
-            base_price = 8.95;
+            base_price = 8.95f;
         } else {
             System.out.println("Wrong number");
         }
@@ -26,17 +26,17 @@ public class SandwichShop {
         System.out.print("How old are you? ");
         int age = scanner.nextInt();
 
-        double discount = 0.0;
+        float discount = 0.0f;
 
         if (age <= 17) {
-            discount = 0.10;
+            discount = 0.10f;
         } else if (age >= 65) {
-            discount = 0.20;
+            discount = 0.20f;
         } else {
             System.out.println("You do not have discount.");
         }
 
-        double price_to_pay = base_price * (1 - discount);
+        float price_to_pay = base_price * (1 - discount);
 
         System.out.printf("Your price is: $%.2f\n ", price_to_pay);
 
