@@ -43,14 +43,3 @@ public class SandwichShop {
 
     }
 }
-/* Prompt the user for the size of the sandwich (1 or 2):
-- 1: Regular: base price $5.45
-- 2: Large: base price $8.95
-Prompt the user if they would like the sandwich "loaded" (yes/no). If so there is
-an additional cost for a loaded sandwich
-- Regular: $1.00
-- Large: $1.75
-Prompt the user for their age:
-- Student (17 years old or younger) — receive a 10% discount
-- Seniors (65 years old or older) — receive a 20% discount
-Display the cost of the sandwich to the screen */
